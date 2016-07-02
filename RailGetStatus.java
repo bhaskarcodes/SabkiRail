@@ -13,6 +13,7 @@ import org.json.JSONObject;
  * @author Bhaskar
  */
 public class RailGetStatus {
+    public static final String API_KEY="*********"; //enter your apikey 
     public String showPosition(String trainno,String date) throws JSONException {
         JSONObject obj = null;
         String responsecode = "-";
@@ -106,7 +107,7 @@ public class RailGetStatus {
     
     public static String getPnrResponse(String pnr) {
 
-        String endpoint = "http://api.railwayapi.com/pnr_status/pnr/" + pnr + "/apikey/" + "bffkg1713" + "/";
+        String endpoint = "http://api.railwayapi.com/pnr_status/pnr/" + pnr + "/apikey/" + API_KEY + "/";
         HttpURLConnection request = null;
         BufferedReader rd = null;
         StringBuilder response = null;
@@ -155,7 +156,7 @@ public class RailGetStatus {
     public static String getLocation(String trainnum,String date) {
 
      
-        String endpoint = "http://api.railwayapi.com/live/train/"+trainnum+"/doj/"+date+"/apikey/"+"bffkg1713"+"/";
+        String endpoint = "http://api.railwayapi.com/live/train/"+trainnum+"/doj/"+date+"/apikey/"+API_KEY+"/";
         HttpURLConnection request = null;
         BufferedReader rd = null;
         StringBuilder response = null;
