@@ -2,7 +2,7 @@
 This desktop application utilizes the RailwayAPI to extract information regarding PNR Status and Live Running Status of trains.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/bhaskarcodes/SabkiRail/master/pic1.png" />
+<img src="https://raw.githubusercontent.com/bhaskarcodes/SabkiRail/master/picture.png" />
 </p>
 
 <p align="center">
